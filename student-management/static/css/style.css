@@ -1,77 +1,137 @@
 body {
-
-    font-family: Arial;
-
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #74ebd5, #ACB6E5);
-
     padding: 30px;
+    margin: 0;
+    min-height: 100vh;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Page Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h1 {
-
     text-align: center;
-
     color: white;
+    font-size: 42px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect on Heading */
+h1:hover {
+    transform: scale(1.05);
+    color: #ffe600;
 }
 
 form {
-
     width: 60%;
-
     margin: auto;
-
-    padding: 20px;
-
+    padding: 25px;
     background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
-    border-radius: 10px;
+/* Form Hover Animation */
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 input {
-
     width: 28%;
-
     padding: 12px;
-
     margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Animation */
+input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    transform: scale(1.03);
 }
 
 button {
-
-    padding: 10px 20px;
-
+    padding: 12px 22px;
     border: none;
-
+    border-radius: 8px;
     background: #4CAF50;
-
     color: white;
-
     cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+    background: #45a049;
+    transform: scale(1.08);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Button Click Effect */
+button:active {
+    transform: scale(0.95);
 }
 
 table {
-
     width: 80%;
-
     margin: 40px auto;
-
     border-collapse: collapse;
-
     background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    animation: slideUp 1s ease;
+}
+
+/* Table Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 th, td {
-
     padding: 15px;
-
     border: 1px solid #ddd;
-
     text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 th {
-
     background: #4CAF50;
-
     color: white;
+    font-size: 18px;
+}
+
+/* Row Hover Animation */
+tr:hover td {
+    background: #f1f1f1;
+    transform: scale(1.01);
+}
+
+/* Alternate Row Colors */
+tr:nth-child(even) {
+    background: #fafafa;
 }
