@@ -6,8 +6,6 @@ body {
     min-height: 100vh;
     animation: fadeIn 1.2s ease-in-out;
 }
-
-/* Page Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -27,7 +25,6 @@ h1 {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover Effect on Heading */
 h1:hover {
     transform: scale(1.05);
     color: #ffe600;
@@ -43,7 +40,7 @@ form {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Form Hover Animation */
+
 form:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
@@ -59,7 +56,7 @@ input {
     transition: all 0.3s ease;
 }
 
-/* Input Focus Animation */
+
 input:focus {
     border-color: #4CAF50;
     box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
@@ -77,14 +74,13 @@ button {
     transition: all 0.3s ease;
 }
 
-/* Button Hover Effects */
+
 button:hover {
     background: #45a049;
     transform: scale(1.08);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Button Click Effect */
 button:active {
     transform: scale(0.95);
 }
