@@ -1,0 +1,77 @@
+body {
+
+    font-family: Arial;
+
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+
+    padding: 30px;
+}
+
+h1 {
+
+    text-align: center;
+
+    color: white;
+}
+
+form {
+
+    width: 60%;
+
+    margin: auto;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 10px;
+}
+
+input {
+
+    width: 28%;
+
+    padding: 12px;
+
+    margin: 10px;
+}
+
+button {
+
+    padding: 10px 20px;
+
+    border: none;
+
+    background: #4CAF50;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+table {
+
+    width: 80%;
+
+    margin: 40px auto;
+
+    border-collapse: collapse;
+
+    background: white;
+}
+
+th, td {
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+}
+
+th {
+
+    background: #4CAF50;
+
+    color: white;
+}
